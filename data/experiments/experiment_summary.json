@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-08-14T09:07:41.001990",
+  "scenario_count": 1,
+  "run_count": 5,
+  "comparison_rows": 3,
+  "governance_rows": 2,
+  "hazard_exposure_definition": "Prototype simulation risk score: occupants_on_segment * segment_hazard_risk * time_on_segment (normalized /100).",
+  "evacuation_time_definition": "Time from evacuation activation to all affected occupants reaching safe exits; strategy rows use deterministic scaling from route ETA under identical hazard state.",
+  "note": "Simulation metrics are deterministic prototype outputs and not certified life-safety measurements."
+}

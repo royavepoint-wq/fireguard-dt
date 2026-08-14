@@ -1,0 +1,32 @@
+{
+  "selected_ml_model": "Logistic Regression",
+  "ml_accuracy": 0.979111,
+  "ml_macro_f1": 0.973639,
+  "critical_recall": 0.984848,
+  "static_evacuation_time": 107.402,
+  "shortest_path_evacuation_time": 55.0,
+  "optimized_evacuation_time": 55.0,
+  "static_hazard_exposure": 0.0,
+  "shortest_hazard_exposure": 0.0,
+  "optimized_hazard_exposure": 18.319,
+  "evacuation_time_change_vs_static": 48.791,
+  "hazard_exposure_reduction_vs_static": null,
+  "time_to_first_response": 37,
+  "time_to_containment": 42,
+  "base_3_year_roi": 78.91,
+  "measured_simulation_metrics": {
+    "source": "SIMULATION_RESULT",
+    "scenario_count": 1
+  },
+  "illustrative_financial_assumptions": {
+    "source": "ILLUSTRATIVE_ROI",
+    "disclosure": "ROI values are illustrative project assumptions for academic feasibility analysis. They are not observed production financial results."
+  },
+  "provenance": {
+    "model_metrics": "MODEL_TEST_RESULT",
+    "strategy_metrics": "SIMULATION_RESULT",
+    "response_metrics": "SIMULATION_RESULT",
+    "roi_metrics": "ILLUSTRATIVE_ROI"
+  },
+  "generated_at": "2026-08-14T09:07:41.003333"
+}

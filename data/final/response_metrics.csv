@@ -1,0 +1,2 @@
+scenario_id,scenario_name,first_dispatch_time,first_response_time,containment_time,resolution_time,resources_dispatched,outcome_quality
+standard-electrical-fire,Standard Electrical Fire,0,37,42,70,2,OPTIMAL

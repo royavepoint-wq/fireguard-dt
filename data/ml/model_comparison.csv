@@ -1,0 +1,4 @@
+Model,Accuracy,Macro Precision,Macro Recall,Macro F1,Weighted F1,ROC-AUC,Critical Precision,Critical Recall,Critical F1
+Logistic Regression,0.979111,0.971994,0.975503,0.973639,0.979072,0.997537,0.955882,0.984848,0.970149
+Random Forest Classifier,0.984889,0.979241,0.979241,0.979219,0.984912,0.998395,0.975535,0.966667,0.971081
+Gradient Boosting Classifier,0.987111,0.983604,0.981097,0.982312,0.987114,0.998524,0.984568,0.966667,0.975535

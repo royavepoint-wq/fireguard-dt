@@ -1,0 +1,6 @@
+metric,value,source
+accuracy,0.979111,MODEL_TEST_RESULT
+macro_f1,0.973639,MODEL_TEST_RESULT
+critical_recall,0.984848,MODEL_TEST_RESULT
+roc_auc,0.997537,MODEL_TEST_RESULT
+model_name,Logistic Regression,MODEL_TEST_RESULT

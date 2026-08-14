@@ -1,0 +1,42 @@
+{
+  "prediction_accuracy": {
+    "value": 0.979111,
+    "unit": "ratio",
+    "source_type": "MODEL_TEST_RESULT"
+  },
+  "macro_f1": {
+    "value": 0.973639,
+    "unit": "ratio",
+    "source_type": "MODEL_TEST_RESULT"
+  },
+  "critical_recall": {
+    "value": 0.984848,
+    "unit": "ratio",
+    "source_type": "MODEL_TEST_RESULT"
+  },
+  "evacuation_time_change": {
+    "value": 48.791,
+    "unit": "percent",
+    "source_type": "SIMULATION_RESULT"
+  },
+  "hazard_exposure_reduction": {
+    "value": null,
+    "unit": "percent",
+    "source_type": "SIMULATION_RESULT"
+  },
+  "first_response_time": {
+    "value": 37,
+    "unit": "seconds",
+    "source_type": "SIMULATION_RESULT"
+  },
+  "containment_time": {
+    "value": 42,
+    "unit": "seconds",
+    "source_type": "SIMULATION_RESULT"
+  },
+  "projected_3_year_roi": {
+    "value": 78.91,
+    "unit": "percent",
+    "source_type": "ILLUSTRATIVE_ROI"
+  }
+}

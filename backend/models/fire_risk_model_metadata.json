@@ -1,0 +1,93 @@
+{
+  "model_name": "Logistic Regression",
+  "model_version": "fire-risk-v1",
+  "trained_at": "2026-08-14T05:27:13.972115+00:00",
+  "training_rows": 10500,
+  "validation_rows": 2250,
+  "test_rows": 2250,
+  "features": [
+    "temperature",
+    "temperature_rate",
+    "smoke_level",
+    "co_level",
+    "co2_level",
+    "humidity",
+    "electrical_load",
+    "occupancy",
+    "hvac_running",
+    "sprinkler_active"
+  ],
+  "classes": [
+    "NORMAL",
+    "WARNING",
+    "CRITICAL"
+  ],
+  "metrics": {
+    "accuracy": 0.979111,
+    "macro_precision": 0.971994,
+    "macro_recall": 0.975503,
+    "macro_f1": 0.973639,
+    "weighted_f1": 0.979072,
+    "roc_auc": 0.997537,
+    "critical_precision": 0.955882,
+    "critical_recall": 0.984848,
+    "critical_f1": 0.970149
+  },
+  "test_metrics": {
+    "accuracy": 0.979111,
+    "macro_precision": 0.971994,
+    "macro_recall": 0.975503,
+    "macro_f1": 0.973639,
+    "weighted_f1": 0.979072,
+    "roc_auc": 0.997537,
+    "critical_precision": 0.955882,
+    "critical_recall": 0.984848,
+    "critical_f1": 0.970149
+  },
+  "critical_recall": 0.984848,
+  "critical_f1": 0.970149,
+  "random_state": 42,
+  "dataset_type": "synthetic",
+  "synthetic_dataset_disclaimer": "Model trained on synthetic fire-sensor data generated for academic simulation. Results demonstrate the prototype pipeline and are not certified for real building safety deployment.",
+  "selection_rule": [
+    "critical_recall",
+    "critical_f1",
+    "macro_f1",
+    "roc_auc",
+    "accuracy"
+  ],
+  "class_distribution": {
+    "NORMAL": 0.582333,
+    "WARNING": 0.271067,
+    "CRITICAL": 0.1466
+  },
+  "split": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "confusion_matrix": [
+    {
+      "actual": "NORMAL",
+      "NORMAL": 1298,
+      "WARNING": 12,
+      "CRITICAL": 0
+    },
+    {
+      "actual": "WARNING",
+      "NORMAL": 15,
+      "WARNING": 580,
+      "CRITICAL": 15
+    },
+    {
+      "actual": "CRITICAL",
+      "NORMAL": 0,
+      "WARNING": 5,
+      "CRITICAL": 325
+    }
+  ],
+  "model_health": {
+    "loaded_successfully": true,
+    "prediction_source": "ML_MODEL"
+  }
+}

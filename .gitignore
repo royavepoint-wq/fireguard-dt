@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/

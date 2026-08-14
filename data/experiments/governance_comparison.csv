@@ -1,0 +1,3 @@
+scenario_id,branch,containment_time,hazard_exposure_score,evacuation_time,unsafe_zone_duration,response_resources_used,outcome_quality
+standard-electrical-fire,FORCE_APPROVE,42,18.319,55.0,42,2,OPTIMAL
+standard-electrical-fire,FORCE_REJECT,70,7.407,55.0,90,2,DEGRADED
