@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode, useState, useSyncExternalStore } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { Sidebar } from "./Sidebar";
@@ -13,27 +13,29 @@ export function AppShell({ children }: AppShellProps) {
   const pathname = usePathname();
   const presentationMode = pathname === "/presentation";
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
-  const sidebarCollapsed = useSyncExternalStore(
-    (onStoreChange) => {
-      window.addEventListener("storage", onStoreChange);
-      window.addEventListener("fireguard-sidebar-collapsed-change", onStoreChange as EventListener);
-      return () => {
-        window.removeEventListener("storage", onStoreChange);
-        window.removeEventListener("fireguard-sidebar-collapsed-change", onStoreChange as EventListener);
-      };
-    },
-    () => {
+  useEffect(() => {
+    function readCollapsedState() {
       try {
-        return window.localStorage.getItem("fireguard-sidebar-collapsed") === "true";
+        setSidebarCollapsed(window.localStorage.getItem("fireguard-sidebar-collapsed") === "true");
       } catch {
-        return false;
+        setSidebarCollapsed(false);
       }
-    },
-    () => false,
-  );
+    }
 
-  function setSidebarCollapsed(nextValue: boolean) {
+    readCollapsedState();
+    window.addEventListener("storage", readCollapsedState);
+    window.addEventListener("fireguard-sidebar-collapsed-change", readCollapsedState as EventListener);
+
+    return () => {
+      window.removeEventListener("storage", readCollapsedState);
+      window.removeEventListener("fireguard-sidebar-collapsed-change", readCollapsedState as EventListener);
+    };
+  }, []);
+
+  function persistSidebarCollapsed(nextValue: boolean) {
+    setSidebarCollapsed(nextValue);
     try {
       window.localStorage.setItem("fireguard-sidebar-collapsed", String(nextValue));
       window.dispatchEvent(new Event("fireguard-sidebar-collapsed-change"));
@@ -59,7 +61,7 @@ export function AppShell({ children }: AppShellProps) {
           mobileOpen={mobileSidebarOpen}
           onCloseMobile={() => setMobileSidebarOpen(false)}
           onNavigateMobile={() => setMobileSidebarOpen(false)}
-          onToggleCollapsed={() => setSidebarCollapsed(!sidebarCollapsed)}
+          onToggleCollapsed={() => persistSidebarCollapsed(!sidebarCollapsed)}
         />
       ) : null}
 

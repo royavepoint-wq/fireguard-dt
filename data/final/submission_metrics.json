@@ -1,0 +1,164 @@
+{
+  "ml": {
+    "selected_model": {
+      "value": "Logistic Regression",
+      "source_type": "MODEL_TEST_RESULT"
+    },
+    "accuracy": {
+      "value": 0.979111,
+      "unit": "ratio",
+      "source_type": "MODEL_TEST_RESULT"
+    },
+    "macro_f1": {
+      "value": 0.973639,
+      "unit": "ratio",
+      "source_type": "MODEL_TEST_RESULT"
+    },
+    "critical_recall": {
+      "value": 0.984848,
+      "unit": "ratio",
+      "source_type": "MODEL_TEST_RESULT"
+    },
+    "critical_f1": {
+      "value": 0.970149,
+      "unit": "ratio",
+      "source_type": "MODEL_TEST_RESULT"
+    },
+    "roc_auc": {
+      "value": 0.997537,
+      "unit": "ratio",
+      "source_type": "MODEL_TEST_RESULT"
+    }
+  },
+  "evacuation": {
+    "static_time": {
+      "value": 94.302,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "shortest_time": {
+      "value": 55.0,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "optimized_time": {
+      "value": 55.0,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "static_hazard_exposure": {
+      "value": 0.0,
+      "unit": "score",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "shortest_hazard_exposure": {
+      "value": 0.0,
+      "unit": "score",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "optimized_hazard_exposure": {
+      "value": 28.463,
+      "unit": "score",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "optimized_time_change_vs_static": {
+      "value": 36.593,
+      "unit": "percent",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "optimized_hazard_reduction_vs_static": {
+      "value": null,
+      "unit": "percent",
+      "source_type": "SIMULATION_RESULT",
+      "note": "N/A because static baseline hazard exposure is zero"
+    },
+    "optimized_peak_congestion": {
+      "value": 0.875,
+      "unit": "ratio",
+      "source_type": "SIMULATION_RESULT"
+    }
+  },
+  "response": {
+    "first_dispatch_time": {
+      "value": 0,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "first_response_time": {
+      "value": 37,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "containment_time": {
+      "value": 42,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "resolution_time": {
+      "value": 70,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    }
+  },
+  "governance": {
+    "approved_containment_time": {
+      "value": 42,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "rejected_containment_time": {
+      "value": 70,
+      "unit": "seconds",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "approved_hazard_exposure": {
+      "value": 18.319,
+      "unit": "score",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "rejected_hazard_exposure": {
+      "value": 7.407,
+      "unit": "score",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "approved_outcome": {
+      "value": "OPTIMAL",
+      "source_type": "SIMULATION_RESULT"
+    },
+    "rejected_outcome": {
+      "value": "DEGRADED",
+      "source_type": "SIMULATION_RESULT"
+    }
+  },
+  "roi": {
+    "conservative_3_year_roi": {
+      "value": 1.34,
+      "unit": "percent",
+      "source_type": "ILLUSTRATIVE_FINANCIAL_MODEL"
+    },
+    "base_3_year_roi": {
+      "value": 78.91,
+      "unit": "percent",
+      "source_type": "ILLUSTRATIVE_FINANCIAL_MODEL"
+    },
+    "optimistic_3_year_roi": {
+      "value": 149.81,
+      "unit": "percent",
+      "source_type": "ILLUSTRATIVE_FINANCIAL_MODEL"
+    },
+    "base_payback_period": {
+      "value": 15.5,
+      "unit": "months",
+      "source_type": "ILLUSTRATIVE_FINANCIAL_MODEL"
+    }
+  },
+  "provenance": {
+    "ml_metadata_file": "backend/models/fire_risk_model_metadata.json",
+    "slide_metrics_file": "data/results/slide_metrics.json",
+    "project_metrics_file": "data/final/project_metrics.json",
+    "scenario_comparison_file": "data/final/scenario_comparison.csv",
+    "governance_comparison_file": "data/final/governance_comparison.csv",
+    "response_metrics_file": "data/final/response_metrics.csv",
+    "roi_scenarios_file": "data/final/roi_scenarios.csv"
+  }
+}

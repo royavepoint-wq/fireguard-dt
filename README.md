@@ -95,7 +95,7 @@ cd backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+python -m uvicorn app.main:app --reload
 ```
 
 ### Frontend
@@ -105,6 +105,18 @@ cd frontend
 npm install
 npm run dev
 ```
+
+## ML Training and Artifact Regeneration
+
+If ML artifacts are missing or you want to retrain using the synthetic dataset pipeline:
+
+```bash
+cd backend
+source .venv/bin/activate
+python scripts/run_step5_pipeline.py
+```
+
+This regenerates model artifacts under `backend/models/` and evaluation outputs under `data/ml/` used by live inference and evidence exports.
 
 Optional frontend API override:
 
