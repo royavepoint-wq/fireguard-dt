@@ -1,4 +1,2 @@
 scenario_id,scenario_name,strategy,evacuation_time,hazard_exposure_score,peak_congestion,distance_travelled,selected_exit,evacuation_time_change_vs_static_pct,hazard_exposure_reduction_vs_static_pct,congestion_reduction_vs_static_pct,recommendation_label
-standard-electrical-fire,Standard Electrical Fire,STATIC_PLAN,107.402,0.0,0.0,14.992,exit-a,0.0,,,
-standard-electrical-fire,Standard Electrical Fire,SHORTEST_PATH,55.0,0.0,0.0,7.677,exit-b,48.791,,,FASTEST
-standard-electrical-fire,Standard Electrical Fire,TWIN_OPTIMIZED,55.0,18.319,0.875,7.677,exit-b,48.791,,,SAFEST / RECOMMENDED
+standard-electrical-fire,Standard Electrical Fire,TWIN_OPTIMIZED,55.0,18.319,0.875,7.677,exit-b,,,,FASTEST / SAFEST / RECOMMENDED

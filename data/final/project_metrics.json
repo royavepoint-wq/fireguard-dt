@@ -3,13 +3,13 @@
   "ml_accuracy": 0.979111,
   "ml_macro_f1": 0.973639,
   "critical_recall": 0.984848,
-  "static_evacuation_time": 107.402,
-  "shortest_path_evacuation_time": 55.0,
+  "static_evacuation_time": null,
+  "shortest_path_evacuation_time": null,
   "optimized_evacuation_time": 55.0,
-  "static_hazard_exposure": 0.0,
-  "shortest_hazard_exposure": 0.0,
+  "static_hazard_exposure": null,
+  "shortest_hazard_exposure": null,
   "optimized_hazard_exposure": 18.319,
-  "evacuation_time_change_vs_static": 48.791,
+  "evacuation_time_change_vs_static": null,
   "hazard_exposure_reduction_vs_static": null,
   "time_to_first_response": 37,
   "time_to_containment": 42,
@@ -28,5 +28,5 @@
     "response_metrics": "SIMULATION_RESULT",
     "roi_metrics": "ILLUSTRATIVE_ROI"
   },
-  "generated_at": "2026-08-14T10:33:11.996152"
+  "generated_at": "2026-08-14T19:06:47.019478"
 }

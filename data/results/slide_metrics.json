@@ -15,7 +15,7 @@
     "source_type": "MODEL_TEST_RESULT"
   },
   "evacuation_time_change": {
-    "value": 48.791,
+    "value": null,
     "unit": "percent",
     "source_type": "SIMULATION_RESULT"
   },
